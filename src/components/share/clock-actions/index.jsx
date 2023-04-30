@@ -9,13 +9,18 @@ const ClockActions = ({local = false, clock, updateClock, createClock, deleteClo
     const handleClock = (values)=> {
         console.log(values);
         createClock(values);
+        
     };
 
+   
+    const tagel = (edit) =>{
+        setIsEdit(edit);
+    };
     return(
         <div>
-            <button onClick={()=>setIsEdit(!isEdit)}> Edit</button>
-            {local ? (<button onClick={()=> setIsCreate(!isCreate)} >Create</button>) : (
-            <button onClick={() => deleteClock(clock.id)} >Delete</button>)
+            <button className="btn" onClick={()=>setIsEdit(!isEdit)}> Edit</button> {" "}
+            {local ? (<button className="btn" onClick={()=> setIsCreate(!isCreate)} >Create</button>) : (
+            <button className="btn" onClick={() => deleteClock(clock.id)} >Delete</button>)
             }
             {
                 isEdit && (
@@ -26,6 +31,7 @@ const ClockActions = ({local = false, clock, updateClock, createClock, deleteClo
                             title= {!local}
                             edit={true}
                             handleClock={updateClock}
+                            tagel = {tagel}
                        />
                     </>
                 )

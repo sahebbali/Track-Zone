@@ -1,0 +1,116 @@
+.localcard {
+    background-color: #ddd;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    padding-left: 20px;
+    text-align: center;
+    margin-left: 20%;
+}
+.card {
+    background-color: #ddd;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.listcard {
+    background-color: #ddd;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    position: relative;
+   
+    text-align: center;
+   
+    
+  
+}
+.container {
+    height:fit-content;
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    padding: 10px;
+  
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+.card h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2 rem;
+    margin-bottom: 0.5 rem;
+    color: #4b4747;
+    
+}
+
+.clockCard {
+    background-color: #ddd;
+    border-radius: 10px;
+    border: 1px solid #999;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.clockCard h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2 rem;
+    margin-bottom: 0.5 rem;
+    color: #4b4747;
+    
+}
+
+.Ebtn {
+    text-align: left;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.eventdata td {
+    padding-right: 70px;
+
+}
+
+.eventhead th {
+    padding-right: 70px;
+    margin-right: 20px;
+}
+
+.Dbtn {
+margin-left: 5px;
+cursor: pointer;
+color: red;
+}
+
+.Edbtn {
+    margin-left: 5px;
+    cursor: pointer;
+    color: green;   
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+   
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #5c5858;
+  }

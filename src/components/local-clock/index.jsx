@@ -3,6 +3,7 @@ import useClock from '../../hooks/useClock';
 import ClockDisplay from '../share/clock-display';
 import ClockActions from '../share/clock-actions';
 import useTimer from '../../hooks/useTimer';
+import classes from '../../style/index.module.css'
 
 const LocalClock = ({clock, updateClock, createClock}) => {
 	const {date, offset, timezone} = useClock(clock.timezone,clock.offset);
@@ -16,7 +17,7 @@ const LocalClock = ({clock, updateClock, createClock}) => {
 	},[date]);
 
 	return (
-		<div>
+		<div className={classes.localcard} >
 			{timer && (
 				<ClockDisplay
 				date={timer}

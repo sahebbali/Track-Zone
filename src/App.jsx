@@ -48,12 +48,15 @@ console.log(clocks);
 	  updateClock = {updateLocalClock}
 	  createClock ={createClock}
 	   />
-      <ClockList 
-	  clocks ={clocks}
-	  localClock={localClock.date}
-	  updateClock={updateClock}
-	  deleteClock = {deleteClock}
-	  />
+	   <div className="appcontainer">
+
+			<ClockList 
+			clocks ={clocks}
+			localClock={localClock.date}
+			updateClock={updateClock}
+			deleteClock = {deleteClock}
+			/>
+	   </div>
         
     </div>
   )
